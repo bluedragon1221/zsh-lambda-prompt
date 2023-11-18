@@ -34,7 +34,10 @@ if [[ $CURSOR_BEAM == 1 ]]; then
 fi
 
 prompt_lambda_setup() {
-    git_stuff
+    if [[ $GIT_STATUS == 1 ]]; then
+	git_stuff
+    fi
+
     PROMPT="%U%~%u %B%(?.%F{green}.%F{red})%%%f%b "
 }
 

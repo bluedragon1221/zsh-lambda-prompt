@@ -14,3 +14,6 @@ This will also keep the cursor a beam after you open a program that changes it (
 `$DIR_HASHES` determines if you want some default DIR_HASHES.
 These are like mapped locations in starship.
 `1` to enable, or `0` to disable
+
+`$GIT_STATUS` enable or disable git status on the right prompt.
+`1` to enable or `0` to disable
