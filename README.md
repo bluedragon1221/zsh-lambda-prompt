@@ -24,6 +24,9 @@ This will also keep the cursor a beam after you open a program that changes it (
 `$GIT_STATUS` enable or disable git status on the right prompt.
 `1` to enable or `0` to disable
 
+`$PROMPT_CHAR` Change the prompt character.
+`λ` is the default, but anything is accepted.
+
 ## Screenshots
 Deals with long paths gracefully:
 ![Long Path](./images/long_path.png)

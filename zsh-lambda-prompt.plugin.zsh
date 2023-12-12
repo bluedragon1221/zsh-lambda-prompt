@@ -32,7 +32,8 @@ if [[ $CURSOR_BEAM == 1 ]]; then
 fi
 
 prompt_lambda_setup() {
-    PROMPT="%U%~%u %B%(?.%F{green}.%F{red})%%%f%b "
+    [[ -z $PROMPT_CHAR ]] && PROMPT_CHAR=λ
+    PROMPT="%U%~%u %B%(?.%F{green}.%F{red})${PROMPT_CHAR}%f%b "
 
     RED=$'\033[1;31m'
     GREEN=$'\033[0;32m'
