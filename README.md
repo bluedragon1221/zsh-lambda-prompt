@@ -42,6 +42,8 @@ This will also keep the cursor a beam after you open a program that changes it (
 `$ENABLE_SUDO_PROMPT` This prompt has the ability to override the default sudo prompt.
 `1` to enable or `0` to disable
 
+![Sudo Prompt](./images/sudo_prompt.jpg)
+
 ## Screenshots
 Deals with long paths gracefully:
 ![Long Path](./images/long_path.png)
