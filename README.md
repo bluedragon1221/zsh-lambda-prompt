@@ -21,6 +21,16 @@ This will also keep the cursor a beam after you open a program that changes it (
 `$DIR_HASHES` determines if you want some default [named directories](https://unix.stackexchange.com/questions/723248/how-can-one-modify-the-named-directory-hash-table-by-creating-appropriate-shell).
 `1` to enable, or `0` to disable
 
+| Directory | Substitution           |
+|-----------|------------------------|
+| `~cfg`    | `~/.config`            |
+| `~pic`    | `~/Pictures`           |
+| `~doc`    | `~/Documents`          |
+| `~dl`     | `~/Downloads`          |
+| `~p`      | `~/projects`           |
+| `~py`     | `~/projects/python`    |
+| `~rs`     | `~/projects/rust`      |
+
 `$GIT_STATUS` enable or disable git status on the right prompt.
 `1` to enable or `0` to disable
 

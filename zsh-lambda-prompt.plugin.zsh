@@ -53,7 +53,7 @@ if [[ $DIR_HASHES == 1 ]]; then
     hash -d pic=~/Pictures
     hash -d doc=~/Documents
     hash -d py=~/projects/python
-    hash -d wp=~/Pictures/wallpaper
+    hash -d rs=~/projects/rust
     hash -d dl=~/Downloads
     hash -d p=~/projects
 fi
