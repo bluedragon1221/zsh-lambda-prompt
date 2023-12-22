@@ -38,7 +38,7 @@ prompt_lambda_setup() {
     RED=$'\033[1;31m'
     GREEN=$'\033[0;32m'
     RESET=$'\033[0m'
-    export SUDO_PROMPT="${GREEN}%u${RESET} →  ${RED}[🔒root]${RESET}: "
+    [[ $ENABLE_SUDO_PROMPT == 1 ]] && export SUDO_PROMPT="${GREEN}%u${RESET} → ${RED}[🔒root]${RESET}: "
 
     if [[ $GIT_STATUS == 1 ]]; then
 	RPROMPT='%F{red}${vcs_info_msg_0_}%f'
