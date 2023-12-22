@@ -18,7 +18,7 @@ Currently, there are two configuration options.
 This will also keep the cursor a beam after you open a program that changes it (like neovim).
 `1` to enable, or `0` to disable
 
-`$DIR_HASHES` determines if you want some default [named directories](https://unix.stackexchange.com/questions/723248/how-can-one-modify-the-named-directory-hash-table-by-creating-appropriate-shell).
+`$DIR_HASHES` some default [named directories](https://unix.stackexchange.com/questions/723248/how-can-one-modify-the-named-directory-hash-table-by-creating-appropriate-shell).
 `1` to enable, or `0` to disable
 
 | Directory | Substitution           |
