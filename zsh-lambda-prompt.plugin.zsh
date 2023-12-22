@@ -31,6 +31,7 @@ if [[ $CURSOR_BEAM == 1 ]]; then
     add-zsh-hook precmd cur
 fi
 
+# must be in the form 'prompt_{theme name}_setup'
 prompt_lambda_setup() {
     [[ -z $PROMPT_CHAR ]] && PROMPT_CHAR=λ
     PROMPT="%U%~%u %B%(?.%F{green}.%F{red})${PROMPT_CHAR}%f%b "
@@ -41,7 +42,7 @@ prompt_lambda_setup() {
     [[ $ENABLE_SUDO_PROMPT == 1 ]] && export SUDO_PROMPT="${GREEN}%u${RESET} → ${RED}[🔒root]${RESET}: "
 
     if [[ $GIT_STATUS == 1 ]]; then
-	RPROMPT='%F{red}${vcs_info_msg_0_}%f'
+      RPROMPT='%F{red}${vcs_info_msg_0_}%f'
     fi
 }
 
